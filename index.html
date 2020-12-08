@@ -15,13 +15,14 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/style.min.css">
 
-  <title>Thomas Can | Développeur Web</title>
+  <title>Thomas Can | Développeur Web Junior</title>
 </head>
 
 <body>
   <!-- Navigation -->
   <nav id="main-nav">
-    <div class="main-logo"><span><i class="fa fa-laptop-code"></i>Toma</span>.dev</div>
+    <!-- <div class="main-logo"><span><i class="fa fa-laptop-code"></i>Toma</span>.dev</div> -->
+    <div class="main-logo">Toma.dev</div>
     <ul>
       <li><a href="#news">Projets</a></li>
       <li><a href="#about">A Propos</a></li>
@@ -35,7 +36,7 @@
       <h1>Développement et Design Web</h1>
       <h1>par Thomas Can</h1>
       <p>Je peux travailler en remote ou me déplacer dans vos locaux.</p>
-      <div><a href="#" class="btn btn-block">Prenons contact</a></div>
+      <div><a href="#contact" class="btn btn-block">Prenons contact</a></div>
     </div>
   </header>
 
@@ -95,20 +96,20 @@
       <div class="container contact-box">
         <div class="column"></div>
         <div class="column">
-          <div class="bg-light">
+          <div>
             <h2>Prenons contact !</h2>
             <form method="POST" data-netlify="true" class="callback-form" name="contact">
               <div class="form-control">
                 <label for="name"></label>
-                <input type="text" name="name" id="name" placeholder="Nom & Prénom ou Entreprise">
+                <input type="text" name="name" id="name" placeholder="Nom & Prénom ou Entreprise" required="required">
               </div>
               <div class="form-control">
                 <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Adresse Mail">
+                <input type="email" name="email" id="email" placeholder="Adresse Mail" required="required">
               </div>
               <div class="form-control">
                 <label for="phone"></label>
-                <input type="text" name="phone" id="phone" placeholder="Téléphone">
+                <input type="text" name="phone" id="phone" placeholder="Téléphone" required="required">
               </div>
               <input type="submit" value="Envoyez!" id="submit" class="btn">
             </form>
