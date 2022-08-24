@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
  return (
-  <StyledFooter>
+  <StyledFooter className="container">
    <div />
    <span>Here how to reach me</span>
 

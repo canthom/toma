@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
- padding: 3rem 2rem;
-
  span {
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
@@ -11,6 +9,7 @@ const StyledHeader = styled.header`
  }
 
  nav {
+  height: 50px;
   color: ${({ theme }) => theme.black};
   position: fixed;
   bottom: 0;
@@ -27,7 +26,9 @@ const StyledHeader = styled.header`
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 700;
+  height: 100%;
  }
 `;
 

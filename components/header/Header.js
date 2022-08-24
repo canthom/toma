@@ -3,25 +3,25 @@ import StyledHeader from "./Header.styled";
 
 export default function Header() {
  return (
-  <StyledHeader>
+  <StyledHeader className="container">
    <span>Toma</span>
    <nav>
     <ul>
      <li>
-      <Link href="about">
-       <a>About</a>
+      <Link href="/">
+       <a>about</a>
       </Link>
      </li>
 
      <li>
       <Link href="works">
-       <a>Works</a>
+       <a>works</a>
       </Link>
      </li>
 
      <li>
       <Link href="contact">
-       <a>Contact</a>
+       <a>contact</a>
       </Link>
      </li>
     </ul>

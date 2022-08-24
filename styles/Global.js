@@ -2,11 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`html,
 body {
-  padding: 0;
-  margin: 0;
-  border: 5px solid ${({ theme }) => theme.primary};
+  border: 0.25rem solid ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.black};
-  height: 100%;
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -15,10 +12,59 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 * {
   box-sizing: border-box;
-}`;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+  span {
+    color: ${({ theme }) => theme.black}
+  }
+
+}
+
+h2 {
+  margin-bottom: 0.75rem;
+}
+
+h2, ul {
+  color: ${({ theme }) => theme.black};
+}
+
+ul {list-style: inside; line-height: 1.4rem;}
+
+ul:not(:last-of-type) {
+  
+  margin-bottom: 2.5rem;
+}
+
+p {
+  color: ${({ theme }) => theme.black};
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+
+  &:last-of-type {
+    margin-bottom: 2rem;
+  }
+}
+
+.strong--primary {
+  color: ${({ theme }) => theme.primary}
+}
+
+.container {
+  padding: 3rem 2rem;
+}
+
+`;
 
 export default GlobalStyle;
