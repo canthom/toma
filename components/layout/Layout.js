@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import StyledLayout from "./Layout.styled";
 
@@ -13,6 +14,7 @@ export default function Layout({ title, keywords, description, children }) {
 
    <Header />
    <div className="container">{children}</div>
+   <Footer />
   </StyledLayout>
  );
 }

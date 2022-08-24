@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
- padding: 3rem;
+ padding: 3rem 2rem;
 
  span {
   font-size: 1.6rem;
