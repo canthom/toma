@@ -36,25 +36,13 @@ h2 {
   margin-bottom: 0.75rem;
 }
 
-h2, ul {
-  color: ${({ theme }) => theme.black};
-}
-
-ul {list-style: inside; line-height: 1.4rem;}
-
-ul:not(:last-of-type) {
-  
-  margin-bottom: 2.5rem;
-}
-
 p {
   color: ${({ theme }) => theme.black};
   line-height: 1.5rem;
-  margin-bottom: 1rem;
+}
 
-  &:last-of-type {
-    margin-bottom: 2rem;
-  }
+p:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 
 .strong--primary {

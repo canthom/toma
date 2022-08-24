@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
+ padding-top: 0;
  margin-bottom: 2rem;
  color: ${({ theme }) => theme.black};
  display: flex;

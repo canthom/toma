@@ -22,7 +22,7 @@ const StyledHeader = styled.header`
  }
 
  ul {
-  padding: 0 1.5rem;
+  padding: 0 2rem;
   list-style: none;
   display: flex;
   justify-content: space-between;

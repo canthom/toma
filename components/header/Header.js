@@ -4,11 +4,15 @@ import StyledHeader from "./Header.styled";
 export default function Header() {
  return (
   <StyledHeader className="container">
-   <span>Toma</span>
+   <span>
+    <Link href="/">
+     <a>toma</a>
+    </Link>
+   </span>
    <nav>
     <ul>
      <li>
-      <Link href="/">
+      <Link href="/about">
        <a>about</a>
       </Link>
      </li>
