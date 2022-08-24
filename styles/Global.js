@@ -1,7 +1,13 @@
-html,
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`html,
 body {
   padding: 0;
   margin: 0;
+  border: 5px solid ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.black};
+  height: 100%;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,14 +19,6 @@ a {
 
 * {
   box-sizing: border-box;
-}
+}`;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
+export default GlobalStyle;
